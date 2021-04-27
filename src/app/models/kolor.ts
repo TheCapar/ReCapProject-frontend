@@ -1,5 +1,4 @@
-  
-export interface Kolor {
-    id: number;
-    name: string;
-  }
+export interface Kolor{
+    kolorId:number;
+    kolorName:string;
+}

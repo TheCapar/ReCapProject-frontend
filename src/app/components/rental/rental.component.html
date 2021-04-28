@@ -1,17 +1,16 @@
-<div *ngIf="dataLoaded == false" class="spinner-border text-danger" role="status">
-  <span class="visually-hidden">Loading...</span>
-</div>
-<table *ngIf="dataLoaded == true" class="table">
+<table class="table">
   <thead>
     <tr>
-      <th>Brand Name</th>
-      <th>Customer</th>
+      <td>Araba</td>
+      <td>Müşteri</td>
+      <td>Kiralama Tarihi</td>
+      <td>Teslimat Tarihi</td>
     </tr>
   </thead>
   <tr *ngFor="let rental of rentals">
-    <td>{{rental.brand }}</td>
-    <td>{{rental.firstName }} {{rental.lastName }}</td>
-
-
+    <td>{{rental.brandName}}</td>
+    <td>{{rental.customer}}</td>
+    <td>{{rental.rentDate}}</td>
+    <td>{{rental.returnDate}}</td>
   </tr>
 </table>

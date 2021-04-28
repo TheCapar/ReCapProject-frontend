@@ -17,11 +17,7 @@ export class KolorComponent implements OnInit {
     this.getKolors();
   }
   getKolors() {
-    throw new Error('Method not implemented.');
-  }
-
-  getColors() {
-    this.kolorService.getColors().subscribe(response => {
+    this.kolorService.getKolors().subscribe((response) => {
       this.colors = response.data;
       this.dataLoaded = true;
     });
